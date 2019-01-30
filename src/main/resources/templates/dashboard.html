@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${greetings}"></h1>
+<a href="/logout">Logout</a>
+<form method="post" action="/view-data" enctype="multipart/form-data">
+    <input type="file" name="file"/><br>
+    <input type="submit">
+</form>
+</body>
+</html>
